@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body onload="mostrarPopup()">
   <header>
     <div class="container-grid posicionamento-header">
       <div>
@@ -60,19 +60,138 @@
 
       </div>
   </section>
+  <section class="secao-partidas">
+    <div class="partidas">
+      <div class="games-aovivo">
+        <h2>Ao<br>Vivo</h2>
+        <div class="partida">
+          <div class="time1">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo do time 1">
+          </div>
+          <p>VS</p>
+          <div class="time1">
+            <img src="img/Sklogo.jpg" alt="Logo do time 1">
+            <p>SK</p>
+          </div>
+        </div>
+      </div>
+      <div class="games-embreve">
+        <h2>Em<br>Breve</h2>
+        <div class="partida">
+          <div class="time1">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo do time 1">
+          </div>
+          <p>VS</p>
+          <div class="time2">
+            <img src="img/Sklogo.jpg" alt="Logo do time 1">
+            <p>SK</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    let menu = document.getElementById("menu");
+  </section>
 
-    function mostrarMenu() {
-      if (menu.style.display != "flex") {
-        menu.style.display = "flex"
-      } else {
-        menu.style.display = "none"
-      }
-    }
+  <section class="secao-noticias">
+    <div class="container">
+      <div class="bloco-noticias">
+        <h2>Noticias</h2>
+        <div class="content-news">
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+          <div class="cardnews">
+            <img src="img/cardnews.jpg" alt="Foto da jogadora profissional">
+            <h3>Titulo da noticia</h3>
+            <p>dsbcjs ducbsud cus duhycusdbcuwbuysacbyua cuysbyudvcusvubcu ausvuxyvas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <aside class="next-games">
+    <h2>Proximos Jogos</h2>
+    <div class="next-games-bg">
+      <div class="next-games-match">
+        <div class="teams">
+          <div>
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo do time">
+          </div>
+          <p>VS</p>
+          <div>
+            <img src="img/Sklogo.jpg" alt="Logo do time">
+            <p>SK</p>
+          </div>
+          <p>25/04/2022 19:00</p>
+        </div>
+      </div>
+    </div>
+  </aside>
 
-  </script>
+
+  <footer>
+    <div class="container rodape">
+      <div class="links-footer">
+        <div class="links">
+          <h2>Links Úteis</h2>
+          <ul>
+            <li><a href="#">Regras de Utilização</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+          <h2>Paginas</h2>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Campeonatos</a></li>
+            <li><a href="#">Resultados</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Login/Cadastro</a></li>
+          </ul>
+        </div>
+      </div>
+      <img class="logo-rodape" src="img/logo.svg" alt="Logo E-players">
+      <div class="sociais">
+        <h2>Faça parte do nosso clan, receba noticias, promoções, spam e virus!!</h2>
+        <form action="">
+          <input id="campo-email" type="email" placeholder="E-mail" required>
+          <button onclick="enviarEmail()" class="botao-cadastrar">Cadastrar</button>
+        </form>
+      </div>
+      <div class="siga-nos">
+        <h2>Siga-nos em:</h2>
+        <a href="#"><img src="img/insta.png" alt="logo insta"></a>
+        <a href="#"><img src="img/face.png" alt="logo face"></a>
+        <a href="#"><img src="img/youtube.png" alt="logo youtube"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>

@@ -101,6 +101,226 @@ header {
   position: relative;
 }
 
+.secao-partidas {
+  background-color: black;
+  height: 90px;
+}
+
+.partidas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.games-aovivo {
+  width: 300px;
+}
+
+.games-embreve {
+  width: 550px;
+}
+
+.games-aovivo,
+.games-embreve {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partidas h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.partida {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partida p {
+  margin-bottom: 0;
+}
+
+.time1,
+.time2 {
+  display: flex;
+  align-items: center;
+}
+
+.partida img {
+  width: 28px;
+}
+
+.time1 img {
+  margin-left: 8px;
+}
+
+.time2 img {
+  margin-right: 8px;
+}
+
+.secao-noticias {
+  background-color: #1E1C21;
+  padding: 30px 0;
+}
+
+.secao-noticias .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloco-noticias {
+  width: 70%;
+  height: 90%;
+  color: white;
+}
+
+.bloco-noticias h2 {
+  font-size: 25px;
+}
+
+.content-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.cardnews {
+  width: 240px;
+  height: 360px;
+  color: #fff;
+  margin-bottom: 32px;
+  background: var(--gradient);
+  box-shadow: 0px 0px 10px orangered, 0px 0px 30px yellow;
+}
+
+.cardnews h3 {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 24;
+}
+
+.cardnews p {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.next-games {
+  width: 25%;
+}
+
+.next-games h2 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.next-games-bg {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2em 0;
+  background: var(--gradient);
+  box-shadow: 0px 0px 10px black, 0px 0px 30px black;
+}
+
+.next-games-match {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.teams {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.next-games-match img {
+  max-width: 40px;
+}
+
+.next-games-match p {
+  margin-top: 16px;
+  color: black;
+}
+
+.next-games-match div {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: black;
+}
+
+.rodape {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  color: #fff;
+}
+
+.links h2 {
+  font-size: 24px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.logo-rodape {
+  width: 300px;
+}
+
+.sociais h2 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sociais input[type="email"]::placeholder {
+  color: #B8B3B3;
+  font-weight: bold;
+}
+
+.botao-cadastrar {
+  width: 156px;
+  color: #fff;
+  background-color: #8326EF;
+  border: none;
+  font-size: 18px;
+}
+
+.siga-nos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.8em;
+}
+
 @media screen and (max-width: 1200px) {
   .container-grid {
     width: 90%;
